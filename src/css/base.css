@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap");
+
+:root {
+  --white: #ffffff;
+  --green: #27694d;
+  --yellow: #daa520;
+  --red: #ef4444;
+  --brown: #383129;
+  --black: #2a2622;
+
+  --title: #2b2622;
+  --text: #7c736a;
+  --border: #e7e2da;
+
+  --background: #f7f4ef;
+  --card: #fcfaf7;
+  --secondary: #eeebe4;
+  --shadow: #c4b8a8;
+  --favorite: #eaf0ed;
+}
+
+body.dark {
+  --white: #1e1b18;
+  --green: #3e8e68;
+
+  --title: #f4f0ea;
+  --text: #a8a095;
+  --border: #38322c;
+
+  --background: #181614;
+  --card: #23201d;
+  --secondary: #2d2925;
+  --shadow: rgba(0, 0, 0, 0.5);
+  --favorite: #1c2621;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Source Sans 3", sans-serif;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+h1 {
+  color: var(--title);
+}
+p {
+  color: var(--text);
+}
+
+.green {
+  color: var(--green);
+}
+
+hr.solid {
+  border: none;
+  border-top: 1px solid var(--shadow);
+  margin: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}

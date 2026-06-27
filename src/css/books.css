@@ -1,0 +1,125 @@
+.main-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 30px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  align-items: start;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 20px;
+  width: 100%;
+  padding: 0 30px 30px 0;
+  box-sizing: border-box;
+}
+
+.book-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: var(--text);
+
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px var(--shadow);
+}
+
+.cover-wrapper {
+  position: relative;
+  width: 100%;
+
+  height: 280px;
+  overflow: hidden;
+}
+
+.book-cover {
+  width: 100%;
+
+  height: 100%;
+  object-fit: cover;
+  background-color: var(--secondary);
+}
+
+.book-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+
+  flex-grow: 1;
+}
+
+.book-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  color: var(--title);
+  margin: 0 0 8px 0;
+  display: -webkit-box;
+
+  overflow: hidden;
+}
+
+.book-author {
+  font-size: 0.9rem;
+  color: var(--text);
+  margin: 0 0 12px 0;
+  flex-grow: 1;
+}
+
+.book-year {
+  font-size: 0.9rem;
+  color: var(--text);
+  margin: 0 0 12px 0;
+}
+
+.heart-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  background-color: var(--white);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s;
+  z-index: 10;
+}
+
+.heart-btn:hover {
+  transform: scale(1.1);
+}
+
+.heart-btn.active .heart-icon-img {
+  filter: invert(21%) sepia(100%) saturate(7414%) hue-rotate(357deg)
+    brightness(94%) contrast(116%);
+}
+
+.heart-icon-img {
+  width: 20px;
+  height: 20px;
+}

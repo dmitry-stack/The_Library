@@ -1,0 +1,115 @@
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 20px 20px 20px;
+}
+
+.main-content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.main-content p {
+  font-size: 1rem;
+  max-width: 500px;
+  margin: 0 auto 24px auto;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.search-filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.search-box {
+  display: flex;
+  position: relative;
+  flex-grow: 2;
+  gap: 10px;
+}
+
+.filter-box {
+  display: flex;
+  flex-grow: 1;
+  gap: 10px;
+}
+
+.search-box input[type="text"],
+.filter-box input[type="text"] {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  background-color: var(--white);
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+  color: var(--text);
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.search-box input[type="text"] {
+  padding-left: 44px;
+}
+
+.search-box .search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.search-box button,
+.filter-box button {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+}
+
+.search-box button:hover,
+.filter-box button:hover {
+  background-color: var(--brown);
+}
+
+.filter-box select {
+  width: 100%;
+  padding: 12px 16px;
+  padding-right: 40px;
+  border: 1px solid var(--border);
+  background-color: var(--white);
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  color: var(--text);
+  appearance: none;
+
+  background-position: right 16px center;
+  background-size: 16px;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}

@@ -1,0 +1,65 @@
+header {
+  background-color: var(--background);
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.web-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  background-color: var(--green);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.logo-text h2 {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  color: var(--title);
+  line-height: 1.2;
+  font-size: 1.3rem;
+}
+
+.logo-text p {
+  font-size: 0.85rem;
+  color: var(--text);
+  margin: 2px 0 0 0;
+}
+
+.theme-toggle {
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background-color: var(--background);
+  font-size: 1.2rem;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px var(--shadow);
+
+  transition:
+    transform 0.2s,
+    background-color 0.3s;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}

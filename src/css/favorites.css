@@ -1,0 +1,121 @@
+.favorites-panel {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+
+  position: sticky;
+  top: 20px;
+  color: var(--text);
+  transition: border-color 0.3s ease;
+}
+
+.fav-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.fav-header-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--favorite);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.fav-header-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.fav-header-text h3 {
+  font-family: "Playfair Display", serif;
+  color: var(--title);
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.fav-count {
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.favorites-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fav-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.fav-item-cover {
+  width: 50px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+}
+
+.fav-item-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.fav-item-info h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  color: var(--title);
+  margin: 0 0 2px 0;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fav-item-author,
+.fav-item-year {
+  font-size: 0.85rem;
+  color: var(--text);
+  margin: 0;
+}
+
+.remove-fav-btn {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.remove-fav-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.fav-item .heart-btn {
+  position: static;
+  box-shadow: none;
+  flex-shrink: 0;
+}
+
+.remove-fav-btn:hover {
+  transform: scale(1.1);
+}
