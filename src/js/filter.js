@@ -1,6 +1,7 @@
 import { storage } from "./utils/storage.js";
 import { displayBooks } from "./books.js";
 
+// Populates author filter dropdown and filters books by selected author
 export const getAllAuthors = (books) => {
   const authorsSet = new Set();
   books.forEach((book) => {
@@ -31,7 +32,7 @@ export const filterByAuthor = (author, books) => {
     return;
   }
   const filtered = books.filter(
-    (book) => book.author_name && book.author_name.includes(author)
+    (book) => book.author_name && book.author_name.includes(author),
   );
   displayBooks(filtered);
 };

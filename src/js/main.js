@@ -13,6 +13,8 @@ import { debounce } from "./utils/debounce.js";
 import { initTheme, toggleTheme } from "./utils/theme.js";
 import { storage } from "./utils/storage.js";
 
+// Initializes the app and binds all event listeners
+
 let lastSearchResults = storage.get("lastSearch") || [];
 
 const search = async () => {

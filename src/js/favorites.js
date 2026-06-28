@@ -1,5 +1,7 @@
 import { storage } from "./utils/storage.js";
 
+// Manages favorites state, localStorage persistence and panel rendering
+
 export let favoriteBooks = storage.get("favoriteBooks") || [];
 
 const save = () => storage.set("favoriteBooks", favoriteBooks);

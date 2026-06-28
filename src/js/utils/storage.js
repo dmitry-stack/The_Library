@@ -1,3 +1,5 @@
+//A localStorage wrapper with JSON parsing error handling
+
 export const storage = {
   get: (key) => {
     try {
