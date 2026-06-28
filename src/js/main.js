@@ -13,10 +13,8 @@ import { debounce } from "./utils/debounce.js";
 import { initTheme, toggleTheme } from "./utils/theme.js";
 import { storage } from "./utils/storage.js";
 
-// --- STATE ---
 let lastSearchResults = storage.get("lastSearch") || [];
 
-// --- SEARCH ---
 const search = async () => {
   const searchInput = document.getElementById("search-input");
   const container = document.getElementById("books-container");
@@ -42,7 +40,6 @@ const search = async () => {
 
 const debouncedSearch = debounce(search, 500);
 
-// --- INIT ---
 window.addEventListener("DOMContentLoaded", () => {
   initTheme();
 

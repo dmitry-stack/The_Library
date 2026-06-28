@@ -48,7 +48,7 @@ export const renderFavorites = () => {
 
   header.innerHTML = `
     <div class="fav-header-icon">
-      <img src="/assets/heart.svg" alt="Favorites" />
+      <img src="./assets/heart.svg" alt="Favorites" />
     </div>
     <div class="fav-header-text">
       <h3>Favorites</h3>
@@ -87,7 +87,7 @@ export const renderFavorites = () => {
     removeBtn.title = "Remove from Favorites";
 
     const img = document.createElement("img");
-    img.src = "/assets/heart.svg";
+    img.src = "./assets/heart.svg";
     img.alt = "Remove";
     img.className = "heart-icon-img";
 

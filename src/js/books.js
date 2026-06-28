@@ -46,7 +46,7 @@ export const displayBooks = (books) => {
     heartBtn.dataset.key = book.key;
 
     const heartImg = document.createElement("img");
-    heartImg.src = "/assets/heart.svg";
+    heartImg.src = "./assets/heart.svg";
     heartImg.alt = "Add to Favorites";
     heartImg.className = "heart-icon-img";
 
