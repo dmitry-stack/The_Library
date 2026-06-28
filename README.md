@@ -7,3 +7,5 @@ npm install
 npm run build
 npm run dev
 ```
+
+### Web page is hosted on GitHub pages: https://dmitry-stack.github.io/The_Library/
